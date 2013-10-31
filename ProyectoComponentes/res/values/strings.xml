@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Datos Pokémon</string>
+    <string name="action_settings">Settings</string>
+    <string name="pantalla_principal">Pantalla Principal</string>
+
+    <!-- PANTALLA PRINCIPAL -->
+    <!-- MENÚ CONTEXTUAL -->
+    <string name="menuUno">Tipos y efectos</string>
+    <string name="menuDos">Pokédex</string>
+    <string name="about">Acerca de</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
+
+    <!-- ACERCA DE -->
+    <string name="acerca_de">Actividad para probar los componentes sencillos y complejos:
+        para ver los sencillos ir al menú Tipos y efectos; para los complejos: Pokédex.</string>
+    <string name="title_activity_tipos_yefectos">Tipos y efectos</string>
+
+    <!-- TIPOS Y EFECTOS -->
+    <string name="tipos">Tipos</string>
+    <string name="efectos">Efectos</string>
+    <string name="title_activity_tipos">Tipos</string>
+
+    <!-- TIPOS -->
+    <string name="botonTipos">Ver Datos</string>
+    <string name="title_activity_efectos">Efectos</string>
+
+    <!-- EFECTOS -->
+    <string name="paralisis">Paralizado</string>
+    <string name="quemadura">Quemado</string>
+    <string name="envenenamiento">Envenenado</string>
+    <string name="dormido">Dormido</string>
+    <string name="congelamiento">Congelado</string>
+    <string name="debiltado">Debilitado</string>
+    <string name="textoAMostrar">Selecciona una opción:</string>
+    <string name="title_activity_lista_yspinner">Pokédex</string>
+
+    <!-- POKÉMONS INICIALES Y EVOLUCIONES -->
+    <string name="iniciales">Iniciales</string>
+    <string name="evoluciones">Evoluciones</string>
+    <string name="title_activity_lista">Pokémons Iniciales</string>
+    <string name="title_activity_otra_pantalla_lista">Datos Iniciales</string>
+    <string name="title_activity_spinner">Evoluciones</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_otra_pantalla_spinner">Evoluciones</string>
+    <string name="title_activity_otra_pantalla_spinenr">Evoluciones</string>
+
+</resources>

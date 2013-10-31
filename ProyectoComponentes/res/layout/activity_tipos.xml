@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Tipos" >
+     
+    <CheckBox
+        android:id="@+id/tipoAcero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:drawableRight="@drawable/tipo_acero" />
+
+    <CheckBox
+        android:id="@+id/tipoAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tipoAcero"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/tipo_agua" />
+
+    <CheckBox
+        android:id="@+id/tipoBicho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipoAgua"
+        android:layout_alignBottom="@+id/tipoAgua"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/tipoAgua"
+        android:drawableRight="@drawable/tipo_bicho" />
+
+    <CheckBox
+        android:id="@+id/tipoDragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipoAcero"
+        android:layout_below="@+id/tipoAcero"
+        android:layout_marginTop="22dp"
+        android:drawableRight="@drawable/tipo_dragon" />
+
+    <Button
+        android:id="@+id/botonMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipoDragon"
+        android:layout_centerVertical="true"
+        android:onClick="getTypeSelected"
+        android:text="@string/botonTipos" />
+
+    <TextView
+        android:id="@+id/textoParaMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonMostrar"
+        android:layout_alignRight="@+id/tipoBicho"
+        android:layout_below="@+id/botonMostrar"
+        android:layout_marginTop="37dp" />
+
+</RelativeLayout>
