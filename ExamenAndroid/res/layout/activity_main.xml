@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+	<Spinner
+	    android:id="@+id/CmbOpciones"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" />
+
+	<RadioGroup
+	    android:id="@+id/radiogroup1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/CmbOpciones"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginLeft="22dp"
+	    android:layout_marginTop="24dp" >
+
+	    <RadioButton
+	        android:id="@+id/radionormal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="Tarifa normal"
+	        android:textSize="20dp" />
+
+	    <RadioButton
+	        android:id="@+id/radiourgente"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Tarifa urgente"
+	        android:textSize="20dp" />
+	</RadioGroup>
+
+	<CheckBox
+	    android:id="@+id/checktarjeta"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:text="Con tarjeta dedicada"
+	    android:textSize="20dp" />
+
+	<CheckBox
+	    android:id="@+id/checkregalo"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/checktarjeta"
+	    android:layout_centerHorizontal="true"
+	    android:text="Caja regalo"
+	    android:textSize="20dp" />
+
+	<EditText
+	    android:id="@+id/textpeso"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/checktarjeta"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="34dp"
+	    android:ems="10"
+	    android:hint="Peso Kg"
+	    android:inputType="number" />
+
+	<Button
+	    android:id="@+id/BtnCalcula"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textpeso"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="29dp"
+	    android:text="Calcular precio" />
+
+</RelativeLayout>
