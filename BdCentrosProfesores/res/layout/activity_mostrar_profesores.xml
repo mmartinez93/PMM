@@ -12,7 +12,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
+        android:layout_marginTop="20px"
         android:text="Codigo centro:" />
 
     <EditText

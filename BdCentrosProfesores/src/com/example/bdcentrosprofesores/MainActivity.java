@@ -1,7 +1,6 @@
 package com.example.bdcentrosprofesores;
 
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,32 +21,28 @@ public class MainActivity extends Activity {
 		Button buttonPersonal = (Button)findViewById(R.id.Personal);
 		Button buttonConsultas = (Button)findViewById(R.id.Consultas);
 		
-		
-//		CreaBase base = new CreaBase(this,"dbase",null,1);
-//		SQLiteDatabase db=base.getReadableDatabase();
-		
-		
-		buttonProfesores.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, Profesores.class);
-					
-				startActivity(intent);
 				
-			}
-		});
-		
-		buttonPersonal.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, Personal.class);
-					
-				startActivity(intent);
-				
-			}
-		});
+//		buttonProfesores.setOnClickListener(new OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+//				Intent intent = new Intent(MainActivity.this, Profesores.class);
+//					
+//				startActivity(intent);
+//				
+//			}
+//		});
+//		
+//		buttonPersonal.setOnClickListener(new OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+//				Intent intent = new Intent(MainActivity.this, Personal.class);
+//					
+//				startActivity(intent);
+//				
+//			}
+//		});
 		
 		buttonCentros.setOnClickListener(new OnClickListener() {
 			

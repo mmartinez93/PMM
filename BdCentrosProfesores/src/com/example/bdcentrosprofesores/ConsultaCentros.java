@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -168,16 +169,16 @@ public class ConsultaCentros extends Activity {
 	
 	protected void onActivityResult(int requestCode,int resultCode, Intent pData)            
     {
-        if ( requestCode == CODIGO_RESPUESTA )//Si el cï¿½digo de respuesta es igual al requestCode
+        if ( requestCode == CODIGO_RESPUESTA )//Si el código de respuesta es igual al requestCode
             {
             if (resultCode == Activity.RESULT_OK )//Si resultCode es igual a ok
                 {
                     final String dato = pData.getExtras().getString(MostrarCentro.DATO_SUBACTIVIDAD );//Obtengo el string de la subactividad
-                    //Aquï¿½ se hara lo que se desee con el valor recuperado
+                    //Aquí se hara lo que se desee con el valor recuperado
 
                     SQLiteDatabase db=base.getWritableDatabase();
                     db.execSQL(dato);
-                    
+                                                           
                     Intent intent = new Intent(ConsultaCentros.this, ConsultaCentros.class);
                     finish();
                     startActivity(intent);
